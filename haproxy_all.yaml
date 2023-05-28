@@ -1,0 +1,8 @@
+---
+- hosts: all
+
+  name: install_haproxy
+  become: yes
+  tasks:
+    - name: Install haproxy packages
+      yum: name=haproxy state=latest

@@ -1,0 +1,9 @@
+---
+- hosts: worker-node1
+
+  name: play1
+  become: yes
+  tasks:
+    - name: Install apache packages
+      apt: name=apache2 state=latest
+      #yum: name=apache2 state=latest
