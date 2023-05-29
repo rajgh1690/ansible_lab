@@ -1,4 +1,5 @@
 ---
+# test
 - hosts: all
 
   name: install_haproxy
